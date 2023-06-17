@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.EmployeeDetailsFormController">
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="1041.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="29.0" layoutY="27.0" prefHeight="618.0" prefWidth="912.0" style="-fx-background-color: black;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TableView fx:id="tblCustomer" layoutX="57.0" layoutY="168.0" prefHeight="361.0" prefWidth="822.0" styleClass="edge-button">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="104.33332824707031" text="Id" />
+            <TableColumn fx:id="colFirstName" prefWidth="126.66665649414062" text="First Name" />
+            <TableColumn fx:id="colLastName" prefWidth="122.33334350585938" text="Last Name" />
+            <TableColumn fx:id="colAddress" prefWidth="114.33331298828125" text="Address" />
+            <TableColumn fx:id="colNic" prefWidth="96.33331298828125" text="NIC" />
+            <TableColumn fx:id="colContact" prefWidth="86.3333740234375" text="Contact" />
+            <TableColumn fx:id="colRole" prefWidth="79.6666259765625" text="Role" />
+            <TableColumn fx:id="colGender" prefWidth="87.6666259765625" text="Gender" />
+         </columns>
+      </TableView>
+      <Label layoutX="208.0" layoutY="35.0" prefHeight="62.0" prefWidth="516.0" text="EMPLOYEE DETAILS">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.1137440758293839">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.020134228187919462">
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.06097560975609757">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="450.0" layoutX="319.0" layoutY="97.0" startX="-181.0" stroke="WHITE" />
+      <JFXButton fx:id="btnBack" layoutX="752.0" layoutY="561.0" onAction="#btnBackOnAction" prefHeight="47.0" prefWidth="108.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBackReport" layoutX="101.0" layoutY="556.0" onAction="#btnBackReportOnAction" prefHeight="47.0" prefWidth="108.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

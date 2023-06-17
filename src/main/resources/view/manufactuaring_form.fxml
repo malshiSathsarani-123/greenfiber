@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1039.0" style="-fx-background-color: #110b07;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.ManufacturingFormController">
+   <children>
+      <ImageView fitHeight="688.0" fitWidth="1032.0" layoutX="-6.0" layoutY="-1.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="45.0" layoutY="33.0" opacity="0.86" prefHeight="617.0" prefWidth="919.0" style="-fx-background-color: black;" styleClass="edge-img" stylesheets="@../style/Style.css">
+         <children>
+            <Label layoutX="145.0" layoutY="22.0" prefHeight="66.0" prefWidth="658.0" text="MANUFACTUARING FORM">
+               <font>
+                  <Font name="Palatino Linotype Bold Italic" size="49.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7725118483412322">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.020134228187919462">
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.06097560975609757">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Line endX="565.0" layoutX="217.0" layoutY="88.0" startX="-72.0" stroke="WHITE" />
+            <Label layoutX="51.0" layoutY="125.0" prefHeight="77.0" prefWidth="152.0" text="Product Code :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnOk" layoutX="519.0" layoutY="308.0" mnemonicParsing="false" onAction="#btnOkOAction" prefHeight="67.0" prefWidth="114.0" style="-fx-background-color: #9b59b6;" styleClass="edge-button" text="OK" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Button>
+            <Label layoutX="51.0" layoutY="219.0" prefHeight="50.0" prefWidth="142.0" text="Quntity : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQty" layoutX="222.0" layoutY="221.0" prefHeight="58.0" prefWidth="197.0" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="485.0" layoutY="220.0" prefHeight="50.0" prefWidth="221.0" text="Manufactiaring Cost : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCost" layoutX="695.0" layoutY="228.0" prefHeight="44.0" prefWidth="199.0" textFill="#1bc932">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="778.0" layoutY="432.0" onAction="#btnBackOnAction" prefHeight="70.0" prefWidth="112.0" style="-fx-background-color: #9b59b6;" styleClass="edge-button" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <ComboBox fx:id="cmbProductCode" layoutX="225.0" layoutY="143.0" onAction="#cmbProductCodeOnAction" prefHeight="44.0" prefWidth="181.0" promptText="PRODUCT CODE" styleClass="edge-button" />
+            <JFXButton layoutX="409.0" layoutY="130.0" onAction="#btnNewOnAction" prefHeight="70.0" prefWidth="126.0" style="-fx-background-color: #27ae60;" styleClass="edge-button" text="NEW" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/plus_mark.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <TableView fx:id="tblManufacturingCart" layoutX="67.0" layoutY="340.0" prefHeight="185.0" prefWidth="389.0">
+               <columns>
+                  <TableColumn fx:id="colMattirialCode" prefWidth="127.0" text="MattirialCode" />
+                  <TableColumn fx:id="colQty" prefWidth="139.0" text="QtyOfOneUnit" />
+                  <TableColumn fx:id="colTotalQty" prefWidth="127.66665649414062" text="TotalQty" />
+               </columns>
+            </TableView>
+            <Label layoutX="551.0" layoutY="138.0" prefHeight="50.0" prefWidth="136.0" text="Description : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDescription" layoutX="699.0" layoutY="143.0" prefHeight="44.0" prefWidth="199.0" textFill="#1bc932">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

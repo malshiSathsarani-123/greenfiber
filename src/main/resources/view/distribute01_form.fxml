@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="651.0" prefWidth="1018.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.Distribute01FormController">
+   <children>
+      <ImageView fitHeight="689.0" fitWidth="1032.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="64.0" opacity="0.74" prefHeight="583.0" prefWidth="932.0" style="-fx-background-color: black;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <JFXButton layoutX="690.0" layoutY="552.0" onAction="#btnConformOnAction" prefHeight="74.0" prefWidth="235.0" style="-fx-background-color: #928AEF;" styleClass="edge-button" stylesheets="@../style/Style.css" text="CONFORM DELEVERY">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="cmbVehicleNo" layoutX="241.0" layoutY="324.0" onAction="#cmbVehicleNoOnAction" prefHeight="25.0" prefWidth="191.0" promptText="vehicle no" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <ComboBox fx:id="cmbDriverId" layoutX="237.0" layoutY="383.0" onAction="#cmbDriverIdOnAction" prefHeight="25.0" prefWidth="191.0" promptText="Driverse id" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label layoutX="63.0" layoutY="189.0" prefHeight="44.0" prefWidth="143.0" text="Delevery Id : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDeleveryId" layoutX="231.0" layoutY="190.0" prefHeight="46.0" prefWidth="171.0" textFill="#30da39">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="325.0" prefHeight="28.0" prefWidth="174.0" text="Vehicle Number" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="381.0" prefHeight="28.0" prefWidth="161.0" text="Driver Id" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="379.0" prefHeight="28.0" prefWidth="134.0" text="Driver Name : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDriverName" layoutX="657.0" layoutY="371.0" prefHeight="46.0" prefWidth="154.0" textFill="#30da39">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="257.0" prefHeight="28.0" prefWidth="155.0" text="Order Id : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="430.0" prefHeight="28.0" prefWidth="101.0" text="Contact" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" layoutX="56.0" layoutY="465.0" prefHeight="44.0" prefWidth="275.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <ComboBox fx:id="cmbOrderId" layoutX="238.0" layoutY="259.0" prefHeight="25.0" prefWidth="187.0" promptText="Order Id" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label layoutX="489.0" layoutY="296.0" prefHeight="44.0" prefWidth="143.0" text="Vehicle Type: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVehicleType" layoutX="616.0" layoutY="295.0" prefHeight="56.0" prefWidth="196.0" textFill="#30da39">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="92.0" prefHeight="62.0" prefWidth="497.0" text="DELIVERY FORM">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.17535545023696683">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.020134228187919462">
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.06097560975609757">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="285.0" layoutX="486.0" layoutY="154.0" startX="-180.0" stroke="WHITE" />
+   </children>
+</AnchorPane>

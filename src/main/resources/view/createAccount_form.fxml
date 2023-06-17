@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="580.0" prefWidth="661.0" styleClass="edge-button" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.CreateAccountFormController">
+   <children>
+      <AnchorPane layoutX="-9.0" layoutY="-4.0" opacity="0.93" prefHeight="616.0" prefWidth="742.0" style="-fx-background-color: black;" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <children>
+            <Label layoutX="101.0" layoutY="22.0" prefHeight="62.0" prefWidth="479.0" text="CREATE ACCOUNT">
+               <font>
+                  <Font name="Palatino Linotype Bold Italic" size="49.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.03317535545023697">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.020134228187919462">
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.06097560975609756">
+                           <color>
+                              <Color red="0.1132127195596695" green="0.08442982286214828" blue="0.2763157784938812" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="97.0" layoutY="124.0" prefHeight="28.0" prefWidth="168.0" text="Pass Code" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="105.0" layoutY="318.0" prefHeight="28.0" prefWidth="119.0" text="Mail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="409.0" prefHeight="35.0" prefWidth="190.0" text="Passwoed" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="584.0" layoutY="529.0" onAction="#btnSaveOnAction" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <Label layoutX="413.0" layoutY="217.0" prefHeight="35.0" prefWidth="126.0" text="Contact" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Line endX="204.33331298828125" layoutX="347.0" layoutY="84.0" startX="-231.6666717529297" stroke="WHITE" />
+            <Label layoutX="396.0" layoutY="414.0" prefHeight="28.0" prefWidth="160.0" text="ReType Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="282.0" layoutY="530.0" onAction="#btnBackOnAction" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="373.0" layoutY="528.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="103.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="483.0" layoutY="531.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <TextField fx:id="txtPassCode" layoutX="94.0" layoutY="167.0" onAction="#txtPassCodeOnAction" prefHeight="44.0" prefWidth="263.0" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtFname" layoutX="86.0" layoutY="252.0" onAction="#txtFnameOnAction" prefHeight="44.0" prefWidth="273.0" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtMail" layoutX="95.0" layoutY="346.0" onAction="#txtMailOnAction" prefHeight="44.0" prefWidth="568.0" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtContact" layoutX="403.0" layoutY="252.0" onAction="#txtContactOnAction" prefHeight="44.0" prefWidth="252.0" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="102.0" layoutY="440.0" onAction="#txtPasswordOnAction" prefHeight="47.0" prefWidth="238.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="txtReTypePassword" layoutX="386.0" layoutY="442.0" onAction="#txtReTypePasswordOnAction" prefHeight="47.0" prefWidth="238.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="105.0" layoutY="230.0" prefHeight="28.0" prefWidth="119.0" text="User Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1039.0" style="-fx-background-color: #110b07;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.MatirialFormController">
+   <children>
+      <ImageView fitHeight="689.0" fitWidth="1045.0" layoutY="1.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="57.0" layoutY="32.0" opacity="0.92" prefHeight="617.0" prefWidth="919.0" style="-fx-background-color: black;" styleClass="edge-img" stylesheets="@../style/Style.css">
+         <children>
+            <TextField fx:id="txtDescription" layoutX="92.0" layoutY="265.0" onAction="#txtDescriptioOnAction" prefHeight="44.0" prefWidth="379.0" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtId" layoutX="91.0" layoutY="178.0" onAction="#txtIdOnAction" onMouseClicked="#txtIdClickedOnAction" prefHeight="44.0" prefWidth="376.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="204.0" layoutY="22.0" prefHeight="62.0" prefWidth="488.0" text="MATTIRIAL FORM">
+               <font>
+                  <Font name="Palatino Linotype Bold Italic" size="49.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.03317535545023697">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.020134228187919462">
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.06097560975609757">
+                           <color>
+                              <Color red="0.9645833373069763" green="0.9583333134651184" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="97.0" layoutY="124.0" prefHeight="57.0" prefWidth="240.0" text="Mettirial Code" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="319.0" prefHeight="47.0" prefWidth="168.0" text="Unit Pice" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnDelete" layoutX="695.0" layoutY="538.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="109.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnSave" layoutX="812.0" layoutY="536.0" onAction="#btnSaveOnAction" prefHeight="44.0" prefWidth="84.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnUpdate" layoutX="448.0" layoutY="538.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="111.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <TextField fx:id="txtUnitPrice" layoutX="91.0" layoutY="366.0" onAction="#txtUnitPriceOnAction" prefHeight="44.0" prefWidth="376.0" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnClear" layoutX="337.0" layoutY="538.0" onAction="#btnClearOnAction" prefHeight="44.0" prefWidth="92.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="Clear" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <Label layoutX="108.0" layoutY="215.0" prefHeight="64.0" prefWidth="177.0" text="Description" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Line endX="374.0" layoutX="337.0" layoutY="84.0" startX="-213.0" stroke="WHITE" />
+            <TextField fx:id="txtQtyOnHand" layoutX="489.0" layoutY="369.0" prefHeight="44.0" prefWidth="376.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="514.0" layoutY="329.0" prefHeight="28.0" prefWidth="168.0" text="Qty On Hand" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnBack" layoutX="218.0" layoutY="535.0" onAction="#btnBackOnAction" prefHeight="44.0" prefWidth="92.0" styleClass="edge-button" stylesheets="@../style/Style.css" text=" " textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="572.0" layoutY="538.0" onAction="#btnSearchOnAction" prefHeight="44.0" prefWidth="111.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="SEARCH" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="25.0" layoutY="547.0" onAction="#btnDetailsOnAction" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="DETAILS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblId" layoutX="97.0" layoutY="203.0" prefHeight="21.0" prefWidth="139.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

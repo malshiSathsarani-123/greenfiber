@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1036.0" style="-fx-background-color: #110b07;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.Attendence01FormController">
+   <children>
+      <ImageView fitHeight="697.0" fitWidth="1036.0" layoutX="-2.0" layoutY="-4.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.12" contrast="-0.12" hue="-0.02" saturation="-0.02" />
+         </effect>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="39.0" opacity="0.34" prefHeight="595.0" prefWidth="922.0" style="-fx-background-color: black;" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <effect>
+            <ColorAdjust brightness="-0.05" />
+         </effect>
+      </Label>
+      <JFXButton fx:id="btnOk" layoutX="841.0" layoutY="191.0" onAction="#btnOkOnAction" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="cmbEmployeeId" layoutX="78.0" layoutY="195.0" onAction="#cmbEmployeeOnAction" prefHeight="47.0" prefWidth="180.0" promptText="EMPLOYEE ID" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <ComboBox fx:id="cmbEmployeAttent" layoutX="671.0" layoutY="194.0" onAction="#cmbEmployeeAttendOnAction" prefHeight="38.0" prefWidth="150.0" promptText="IS ATTENT" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label layoutX="286.0" layoutY="193.0" prefHeight="47.0" prefWidth="192.0" text="Employee Name : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmployeeName" layoutX="464.0" layoutY="187.0" prefHeight="59.0" prefWidth="190.0" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black Italic" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblAtttendenceCart" layoutX="182.0" layoutY="279.0" prefHeight="275.0" prefWidth="659.0">
+         <columns>
+            <TableColumn fx:id="colEmployeeId" prefWidth="127.0" text="Employee Id" />
+            <TableColumn fx:id="colEmployeeName" prefWidth="139.0" text="Employee Name" />
+            <TableColumn fx:id="colType" prefWidth="174.0" text="Type" />
+            <TableColumn fx:id="colDate" prefWidth="141.0" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="337.0" layoutY="49.0" prefHeight="62.0" prefWidth="349.0" text="ATTENDENCE">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.3222748815165877">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.020134228187919462">
+                     <color>
+                        <Color red="0.5736963748931885" green="0.5611598491668701" blue="0.6447368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.06097560975609757">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2073170731707317">
+                     <color>
+                        <Color red="0.574720025062561" green="0.5631999969482422" blue="0.6399999856948853" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="324.0" endY="8.0" layoutX="414.0" layoutY="104.0" startX="-104.0" startY="8.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8157894611358643" green="0.8157894611358643" blue="0.8157894611358643" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.004629629664123058" blue="0.004629629664123058" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Button layoutX="829.0" layoutY="564.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="47.0" prefWidth="97.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="69.0" layoutY="561.0" mnemonicParsing="false" onAction="#btnoUTOnAction" prefHeight="47.0" prefWidth="135.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="OUT TIME" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

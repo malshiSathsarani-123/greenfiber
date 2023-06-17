@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.SupplierDetailsFormController">
+   <children>
+      <AnchorPane fx:id="root1" layoutX="1.0" layoutY="2.0" prefHeight="695.0" prefWidth="1038.0" style="-fx-background-color: #110b07;">
+         <children>
+            <ImageView fitHeight="695.0" fitWidth="1034.0" layoutX="-5.0" layoutY="-3.0" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="53.0" layoutY="24.0" opacity="0.93" prefHeight="617.0" prefWidth="919.0" style="-fx-background-color: black;" styleClass="edge-img" stylesheets="@../style/Style.css">
+               <children>
+                  <TableView fx:id="tblCustomer" layoutX="47.0" layoutY="158.0" prefHeight="361.0" prefWidth="734.0">
+                     <columns>
+                        <TableColumn fx:id="colId" prefWidth="104.33332824707031" text="Id" />
+                        <TableColumn fx:id="colFirstName" prefWidth="126.66665649414062" text="First Name" />
+                        <TableColumn fx:id="colLastName" prefWidth="122.33334350585938" text="Last Name" />
+                        <TableColumn fx:id="colComName" prefWidth="114.33331298828125" text="CompanyName" />
+                        <TableColumn fx:id="colNic" prefWidth="130.33331298828125" text="NIC" />
+                        <TableColumn fx:id="colContact" prefWidth="130.33331298828125" text="Contact" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="198.0" layoutY="25.0" prefHeight="62.0" prefWidth="516.0" text="SUPPLIER DETAILS">
+                     <font>
+                        <Font name="Palatino Linotype Bold Italic" size="49.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.03317535545023697">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.020134228187919462">
+                                 <color>
+                                    <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.06097560975609757">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Line endX="379.0" layoutX="309.0" layoutY="87.0" startX="-100.0" stroke="WHITE" />
+                  <JFXButton fx:id="btnBack" layoutX="742.0" layoutY="551.0" onAction="#btnBackOnAction" prefHeight="47.0" prefWidth="108.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" text="BACK" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnBackReport" layoutX="58.0" layoutY="546.0" onAction="#btnBackReportOnAction" prefHeight="47.0" prefWidth="108.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" text="BACK" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.AttendenceDetailsFormController">
+   <children>
+      <ImageView fitHeight="699.0" fitWidth="1047.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="23.0" opacity="0.62" prefHeight="656.0" prefWidth="993.0" style="-fx-background-color: black;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <JFXButton fx:id="btnOk" layoutX="694.0" layoutY="257.0" onAction="#btnOkOnAction" prefHeight="51.0" prefWidth="113.0" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="cmbEmployeeId" layoutX="60.0" layoutY="266.0" onAction="#cmbEmployeeOnAction" prefHeight="47.0" prefWidth="180.0" promptText="EMPLOYEE ID" styleClass="edge-button" />
+      <Label layoutX="283.0" layoutY="263.0" prefHeight="47.0" prefWidth="192.0" text="Employee Name : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmployeeName" layoutX="475.0" layoutY="256.0" prefHeight="59.0" prefWidth="190.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblAtttendenceCart" layoutX="40.0" layoutY="340.0" prefHeight="247.0" prefWidth="895.0" styleClass="edge-button">
+         <columns>
+            <TableColumn fx:id="colEmployeeId" prefWidth="127.0" text="Employee Id" />
+            <TableColumn fx:id="colEmployeeName" prefWidth="139.0" text="Employee Name" />
+            <TableColumn fx:id="colEmployeeInTime" prefWidth="127.66665649414062" text="In Time" />
+            <TableColumn fx:id="colEmployeeOutTime" prefWidth="64.0" text="Out Time" />
+            <TableColumn fx:id="colWorkingHours" prefWidth="219.0" text="Working Hours" />
+            <TableColumn fx:id="colType" prefWidth="115.3333740234375" text="Full Day/Half Day" />
+            <TableColumn fx:id="colDate" prefWidth="115.3333740234375" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="305.0" layoutY="49.0" prefHeight="62.0" prefWidth="349.0" text="ATTENDENCE">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7535545023696681" startY="0.03317535545023697">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.020134228187919462">
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.06097560975609757">
+                     <color>
+                        <Color red="0.8289473652839661" green="0.8289473652839661" blue="0.8289473652839661" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="280.0" endY="8.0" layoutX="414.0" layoutY="104.0" startX="-163.0" startY="8.0" stroke="WHITE" />
+      <JFXButton layoutX="806.0" layoutY="593.0" onAction="#btnBackOnAction" prefHeight="50.0" prefWidth="95.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="498.0" layoutY="170.0" onAction="#btnDateOkOnAction" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="56.0" layoutY="173.0" prefHeight="47.0" prefWidth="109.0" text="Date : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepicker" layoutX="142.0" layoutY="183.0" prefHeight="25.0" prefWidth="218.0" />
+   </children>
+</AnchorPane>

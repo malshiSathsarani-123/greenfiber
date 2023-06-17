@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1039.0" style="-fx-background-color: #110b07;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.AttendenceFormController">
+   <children>
+      <ImageView fitHeight="723.0" fitWidth="1019.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="29.0" layoutY="14.0" opacity="0.72" prefHeight="640.0" prefWidth="946.0" style="-fx-background-color: black;" styleClass="edge-img" stylesheets="@../style/Style.css">
+         <children>
+            <JFXButton fx:id="btnOk" layoutX="831.0" layoutY="181.0" onAction="#btnOkOnAction" text="OK" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <ComboBox fx:id="cmbEmployeeId" layoutX="68.0" layoutY="185.0" onAction="#cmbEmployeeOnAction" prefHeight="47.0" prefWidth="180.0" promptText="EMPLOYEE ID" />
+            <ComboBox fx:id="cmbEmployeAttent" layoutX="661.0" layoutY="184.0" onAction="#cmbEmployeAttentOnAction" prefHeight="38.0" prefWidth="150.0" promptText="IS ATTENT" />
+            <Label layoutX="276.0" layoutY="183.0" prefHeight="47.0" prefWidth="192.0" text="Employee Name : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmployeeName" layoutX="454.0" layoutY="177.0" prefHeight="59.0" prefWidth="190.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblAtttendenceCart" layoutX="24.0" layoutY="307.0" prefHeight="323.0" prefWidth="899.0">
+               <columns>
+                  <TableColumn fx:id="colEmployeeId" prefWidth="127.0" text="Employee Id" />
+                  <TableColumn fx:id="colEmployeeName" prefWidth="139.0" text="Employee Name" />
+                  <TableColumn fx:id="colEmployeeInTime" prefWidth="127.66665649414062" text="In Time" />
+                  <TableColumn fx:id="colEmployeeOutTime" prefWidth="125.33334350585938" text="Out Time" />
+                  <TableColumn fx:id="colWorkingHours" prefWidth="180.0" text="Working Hours" />
+                  <TableColumn fx:id="colType" prefWidth="198.0" text="Full Day/Half Day" />
+               </columns>
+            </TableView>
+            <TextField fx:id="searchemp" layoutX="68.0" layoutY="128.0" onKeyReleased="#keyUpOnAtion" prefHeight="25.0" prefWidth="165.0" />
+         </children></AnchorPane>
+      <Label layoutX="367.0" layoutY="82.0" prefHeight="62.0" prefWidth="456.0" text="ATTENDENCE">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.26540284360189575">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.020134228187919462">
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.06097560975609757">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.9342105388641357" blue="0.9342105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="234.66668701171875" endY="8.0" layoutX="476.0" layoutY="144.0" startX="-104.0" startY="8.0" stroke="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="651.0" prefWidth="1018.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.PaymentDetailsFormController">
+   <children>
+      <ImageView fitHeight="708.0" fitWidth="1057.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="33.0" opacity="0.62" prefHeight="656.0" prefWidth="993.0" style="-fx-background-color: black;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TableView fx:id="tblPaymentCart" layoutX="50.0" layoutY="157.0" prefHeight="410.0" prefWidth="895.0" styleClass="edge-button">
+         <columns>
+            <TableColumn fx:id="colPayId" prefWidth="120.0" text="PaymentId" />
+            <TableColumn fx:id="colDate" prefWidth="110.0" text="Date" />
+            <TableColumn fx:id="colAmount" prefWidth="123.0" text="Amount" />
+            <TableColumn fx:id="colBalance" prefWidth="133.0" text="Balance" />
+            <TableColumn fx:id="colType" prefWidth="153.0" text="Type" />
+            <TableColumn fx:id="colOrderId" prefWidth="121.0" text="Order_Id" />
+            <TableColumn fx:id="colSuppliesId" prefWidth="149.0" text="Supplies_Id" />
+         </columns>
+      </TableView>
+      <Label layoutX="244.0" layoutY="59.0" prefHeight="62.0" prefWidth="470.0" text="PAYMENT DETAILS">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7535545023696681" startY="0.03317535545023697">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.020134228187919462">
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.06097560975609757">
+                     <color>
+                        <Color red="0.8289473652839661" green="0.8289473652839661" blue="0.8289473652839661" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="280.0" endY="8.0" layoutX="424.0" layoutY="114.0" startX="-163.0" startY="8.0" stroke="WHITE" />
+      <JFXButton layoutX="816.0" layoutY="603.0" onAction="#btnBackOnAction" prefHeight="50.0" prefWidth="95.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

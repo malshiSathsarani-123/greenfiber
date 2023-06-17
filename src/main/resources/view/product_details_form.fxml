@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.ProductDetailsFormController">
+   <children>
+      <ImageView fitHeight="714.0" fitWidth="1059.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="103.0" layoutY="48.0" opacity="0.67" prefHeight="610.0" prefWidth="853.0" style="-fx-background-color: black;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <Label layoutX="272.0" layoutY="35.0" prefHeight="62.0" prefWidth="516.0" text="PRODUCT DETAILS">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.03317535545023697">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.020134228187919462">
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.06097560975609757">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="468.0" layoutX="319.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
+      <JFXButton fx:id="btnBack" layoutX="752.0" layoutY="561.0" onAction="#btnBackOnAction" prefHeight="47.0" prefWidth="108.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblProduct" layoutX="155.0" layoutY="172.0" prefHeight="362.0" prefWidth="697.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="108.33334350585938" text="Code" />
+            <TableColumn fx:id="colDescription" prefWidth="175.66665649414062" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="141.0" text="Qty" />
+            <TableColumn fx:id="colCost" prefWidth="135.33331298828125" text="Cost" />
+            <TableColumn fx:id="colPrice" prefWidth="129.0" text="Unit Price" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnBackReport" layoutX="148.0" layoutY="571.0" onAction="#btnBackReportOnAction" prefHeight="47.0" prefWidth="108.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

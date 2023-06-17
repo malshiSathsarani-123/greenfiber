@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1039.0" style="-fx-background-color: #110b07;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.PlaceSuppliesFormController">
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="1027.0" layoutX="-3.0" layoutY="-5.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="45.0" layoutY="35.0" opacity="0.91" prefHeight="620.0" prefWidth="935.0" style="-fx-background-color: black;" styleClass="edge-img" stylesheets="@../style/Style.css">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="733.0" layoutY="562.0" onAction="#btnPlaceSuppliesOnAction" prefHeight="44.0" prefWidth="189.0" style="-fx-background-color: #00b894;" styleClass="edge-button" text="Place Suppies " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../GDSE/JDNC/jdbc-65/04-thogakade/src/main/resources/img/make_order.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="642.0" layoutY="561.0" onAction="#btnBackOnAction" prefHeight="44.0" prefWidth="80.0" style="-fx-background-color: #8e44ad;" styleClass="edge-button" text="Back" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="759.0" layoutY="300.0" onAction="#btnAddToCartOnAction" prefHeight="44.0" prefWidth="155.0" style="-fx-background-color: #6c5ce7;" styleClass="edge-button" text="Add to cart" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../GDSE/JDNC/jdbc-65/04-thogakade/src/main/resources/img/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtQty" layoutX="782.0" layoutY="248.0" onAction="#txtQtyOnAction" prefHeight="33.0" prefWidth="66.0" style="-fx-background-color: White;" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="787.0" layoutY="217.0" text="Qty:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblQtyOnHand" layoutX="634.0" layoutY="253.0" prefHeight="25.0" prefWidth="107.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="632.0" layoutY="219.0" text="Qty. On Hand:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUnitPrice" layoutX="498.0" layoutY="246.0" prefHeight="33.0" prefWidth="98.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="493.0" layoutY="219.0" prefHeight="19.0" prefWidth="98.0" text="Unit Price:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="284.0" layoutY="218.0" prefHeight="23.0" prefWidth="114.0" text="Description:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDescription" layoutX="279.0" layoutY="246.0" prefHeight="33.0" prefWidth="162.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbMatirialCode" focusColor="WHITE" layoutX="10.0" layoutY="246.0" onAction="#cmbMatirialOnAction" prefHeight="33.0" prefWidth="162.0" promptText="Code" style="-fx-background-color: white;" styleClass="edge-button" unFocusColor="WHITE" />
+            <Label layoutX="16.0" layoutY="220.0" prefHeight="30.0" prefWidth="179.0" text="Mattirial Code:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSupplierName" layoutX="743.0" layoutY="149.0" prefHeight="26.0" prefWidth="127.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="567.0" layoutY="153.0" text="Supplier Name:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="429.0" layoutY="149.0" onAction="#btnNewSupplierOnAction" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: #2ecc71;" styleClass="edge-button" text="NEW" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../GDSE/JDNC/jdbc-65/04-thogakade/src/main/resources/img/new.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="cmbSupplierrId" focusColor="WHITE" layoutX="168.0" layoutY="156.0" onAction="#cmbSupplierrIdOnAction" prefHeight="33.0" prefWidth="227.0" promptText="Supplier Id:" style="-fx-background-color: white;" styleClass="edge-button" unFocusColor="WHITE" />
+            <Label layoutX="19.0" layoutY="158.0" prefHeight="30.0" prefWidth="152.0" text="Supplier Id:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSuppliesId" layoutX="36.0" layoutY="57.0" prefHeight="26.0" prefWidth="131.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="183.0" layoutY="24.0" prefHeight="62.0" prefWidth="421.0" text="PLACE SUPPLIES">
+               <font>
+                  <Font name="Palatino Linotype Bold Italic" size="49.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.03317535545023697">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.020134228187919462">
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.06097560975609757">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="639.0" layoutY="38.0" text="Suppies date:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSuppliesDate" layoutX="763.0" layoutY="37.0" prefHeight="30.0" prefWidth="139.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="639.0" layoutY="70.0" prefHeight="30.0" prefWidth="131.0" text="Suppies Time:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSuppliesTime" layoutX="775.0" layoutY="65.0" prefHeight="33.0" prefWidth="94.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="332.66668701171875" layoutX="260.0" layoutY="85.0" startX="-64.66665649414062" stroke="WHITE" />
+            <TableView fx:id="tblOrderCart1" layoutX="15.0" layoutY="353.0" prefHeight="195.0" prefWidth="770.0">
+               <columns>
+                  <TableColumn fx:id="colItemCode" prefWidth="75.0" text="Code" />
+                  <TableColumn fx:id="colDescription" prefWidth="191.0" text="Description" />
+                  <TableColumn fx:id="colQty" prefWidth="81.0" text="Qty" />
+                  <TableColumn fx:id="colUnitPrice" prefWidth="172.0" text="Unit Price" />
+                  <TableColumn fx:id="colTotal" prefWidth="112.0" text="Total" />
+                  <TableColumn fx:id="colAction" prefWidth="115.0" text="Action" />
+               </columns>
+            </TableView>
+            <Label layoutX="31.0" layoutY="20.0" prefHeight="47.0" prefWidth="122.0" textFill="#278d7f">
+<!--               <fx:fx :id>lblSuppliesId</fx:fx:id>-->
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNetTotal" layoutX="125.0" layoutY="555.0" prefHeight="47.0" prefWidth="125.0" text="0" textFill="#2ab247">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="183.0" layoutY="238.0" onAction="#btnNewMattirialOnAction" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: #2ecc71;" styleClass="edge-button" text="NEW" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../GDSE/JDNC/jdbc-65/04-thogakade/src/main/resources/img/new.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="64.0" layoutY="591.0" prefHeight="47.0" prefWidth="107.0" text="Net Total : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="651.0" prefWidth="1018.0" style="-fx-background-color: #110b07;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="682.0" fitWidth="1023.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="24.0" opacity="0.7" prefHeight="639.0" prefWidth="960.0" style="-fx-background-color: black;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <TextField fx:id="txtFirstName" layoutX="104.0" layoutY="254.0" onAction="#txtFnameOnAction" prefHeight="44.0" prefWidth="379.0" promptText="First" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtId" layoutX="103.0" layoutY="167.0" onAction="#txtIdOnAction" onMouseClicked="#txtIdClickedOnAction" prefHeight="44.0" prefWidth="376.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="246.0" layoutY="32.0" prefHeight="62.0" prefWidth="456.0" text="CUSTOMER FORM">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.20379146919431282">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.020134228187919462">
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.06097560975609757">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="107.0" layoutY="134.0" prefHeight="28.0" prefWidth="168.0" text="Customer Id" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="230.0" prefHeight="28.0" prefWidth="119.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="542.0" layoutY="441.0" prefHeight="64.0" prefWidth="135.0" text="Contact" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="461.0" prefHeight="35.0" prefWidth="114.0" text="NIC" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="426.0" prefHeight="28.0" prefWidth="127.0" text="Gender" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="radioBtnFemail" layoutX="394.0" layoutY="425.0" onAction="#radiaBtnGenderOnAction" text="Femal" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <unSelectedColor>
+            <Color red="1.0" green="0.9074074029922485" blue="0.9074074029922485" />
+         </unSelectedColor>
+         <selectedColor>
+            <Color red="0.9868420958518982" green="0.9868420958518982" blue="0.9868420958518982" />
+         </selectedColor>
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXButton fx:id="btnDelete" layoutX="700.0" layoutY="548.0" onAction="#btnDeleteOnAction" prefHeight="57.0" prefWidth="89.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXRadioButton fx:id="radioBtnMail" layoutX="268.0" layoutY="426.0" onAction="#radiaBtnGenderOnAction" text="Male" textFill="#f8f8f8">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+         <font>
+            <Font size="18.0" />
+         </font>
+         <unSelectedColor>
+            <Color red="1.0" green="1.0" blue="1.0" />
+         </unSelectedColor>
+         <selectedColor>
+            <Color red="1.0" green="1.0" blue="1.0" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXButton fx:id="btnSave" layoutX="798.0" layoutY="546.0" onAction="#btnSaveOnAction" prefHeight="56.0" prefWidth="95.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="500.0" layoutY="548.0" onAction="#btnUpdateOnAction" prefHeight="61.0" prefWidth="95.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtNic" layoutX="106.0" layoutY="491.0" onAction="#txtNicOnAction" onMouseClicked="#txtNicClickedOnAction" prefHeight="44.0" prefWidth="384.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="103.0" layoutY="355.0" onAction="#txtAddressOnAction" prefHeight="44.0" prefWidth="783.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLastName" layoutX="536.0" layoutY="254.0" onAction="#txtLnameOnAction" prefHeight="44.0" prefWidth="349.0" promptText="Last" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="527.0" layoutY="488.0" onMouseClicked="#txtContactClickedOnAction" prefHeight="44.0" prefWidth="361.0" styleClass="edge-button" stylesheets="@../style/Style.css">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="396.0" layoutY="549.0" onAction="#btnClearOnAction" prefHeight="60.0" prefWidth="98.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="101.0" layoutY="320.0" prefHeight="35.0" prefWidth="131.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Line endX="373.0" layoutX="357.0" layoutY="94.0" startX="-147.0" stroke="WHITE" />
+      <JFXButton fx:id="btnBack" layoutX="244.0" layoutY="547.0" onAction="#btnBackOnAction" prefHeight="61.0" prefWidth="95.0" styleClass="edge-button" text="  " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="600.0" layoutY="546.0" onAction="#btnSearchOnAction" prefHeight="60.0" prefWidth="95.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="50.0" layoutY="545.0" onAction="#btnDetailsOnAction" prefHeight="60.0" prefWidth="98.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="DETAILS" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblPassword" layoutX="110.0" layoutY="181.0" prefHeight="33.0" prefWidth="156.0" textFill="RED" />
+      <Label fx:id="lblNic" layoutX="110.0" layoutY="513.0" prefHeight="20.0" prefWidth="161.0" textFill="RED" />
+      <Label fx:id="lblContact" layoutX="549.0" layoutY="511.0" prefHeight="20.0" prefWidth="167.0" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="689.0" prefWidth="1039.0" style="-fx-background-color: #110b07;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.PaymentFormController">
+   <children>
+      <ImageView fitHeight="697.0" fitWidth="1031.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="52.0" layoutY="30.0" opacity="0.82" prefHeight="645.0" prefWidth="935.0" style="-fx-background-color: black;" styleClass="edge-img" stylesheets="@../style/Style.css">
+         <children>
+            <Label fx:id="lblCustomerId" layoutX="157.0" layoutY="314.0" prefHeight="26.0" prefWidth="127.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="315.0" prefHeight="30.0" prefWidth="148.0" text="Customer Id:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbOrderId" layoutX="121.0" layoutY="151.0" onAction="#cmbOrderIdOnAction" prefHeight="44.0" prefWidth="216.0" promptText="Order Id:" style="-fx-background-color: white;" styleClass="edge-button" unFocusColor="WHITE" />
+            <Label layoutX="19.0" layoutY="158.0" prefHeight="30.0" prefWidth="116.0" text="Order Id:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPaymentId" layoutX="31.0" layoutY="25.0" prefHeight="47.0" prefWidth="131.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="289.0" layoutY="24.0" prefHeight="62.0" prefWidth="315.0" text="PAYMENT">
+               <font>
+                  <Font name="Palatino Linotype Bold Italic" size="49.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.03317535545023697">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.020134228187919462">
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.06097560975609757">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="613.0" layoutY="38.0" prefHeight="30.0" prefWidth="140.0" text="Payment date:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="773.0" layoutY="38.0" prefHeight="30.0" prefWidth="139.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="608.0" layoutY="70.0" prefHeight="30.0" prefWidth="162.0" text="Payment Time:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="775.0" layoutY="65.0" prefHeight="33.0" prefWidth="114.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="306.0" endY="1.0" layoutX="260.0" layoutY="85.0" startX="-12.0" startY="1.0" stroke="WHITE" />
+            <Label layoutX="27.0" layoutY="581.0" prefHeight="47.0" prefWidth="134.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNetTotal" layoutX="170.0" layoutY="583.0" prefHeight="47.0" prefWidth="187.0" textFill="#429039">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="823.0" layoutY="501.0" onAction="#btnSuppliesPayOnAction" prefHeight="53.0" prefWidth="86.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="PAY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="24.0" layoutY="242.0" prefHeight="30.0" prefWidth="95.0" text="Amount :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOrderAmount" layoutX="152.0" layoutY="246.0" prefHeight="40.0" prefWidth="153.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="499.0" layoutY="154.0" prefHeight="30.0" prefWidth="116.0" text="Order Id:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbSupliesId" layoutX="646.0" layoutY="147.0" onAction="#cmbSupliesIdOnAction" prefHeight="44.0" prefWidth="216.0" promptText="Order Id:" style="-fx-background-color: white;" styleClass="edge-button" unFocusColor="WHITE" />
+            <Label layoutX="515.0" layoutY="242.0" prefHeight="30.0" prefWidth="95.0" text="Amount :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSuppliesAmount" layoutX="662.0" layoutY="240.0" prefHeight="30.0" prefWidth="95.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="520.0" layoutY="316.0" prefHeight="30.0" prefWidth="148.0" text="Supplier Id:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSupplierId" layoutX="679.0" layoutY="315.0" prefHeight="26.0" prefWidth="127.0" textFill="#278d7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="236.0" layoutY="502.0" onAction="#btnOrderPayOnAction" prefHeight="53.0" prefWidth="86.0" style="-fx-background-color: #6055DB;" styleClass="edge-button" stylesheets="@../style/Style.css" text="PAY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="15.0" layoutY="397.0" prefHeight="30.0" prefWidth="148.0" text="Pay Amount" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="504.0" layoutY="401.0" prefHeight="30.0" prefWidth="148.0" text="Pay Amount" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPayAmountSupllies" layoutX="661.0" layoutY="386.0" onAction="#txtPayAmountSuplliesOnAction" prefHeight="55.0" prefWidth="194.0" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPayAmountOrder" layoutX="157.0" layoutY="383.0" onAction="#txtPayAmountOrderOnAction" prefHeight="55.0" prefWidth="236.0" styleClass="edge-button">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

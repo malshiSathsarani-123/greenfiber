@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="651.0" prefWidth="1018.0" style="-fx-background-color: #95BEC2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.DistributeFormController">
+   <children>
+      <ImageView fitHeight="735.0" fitWidth="1030.0" layoutX="-8.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/isolated-golden-glitter-lights-dark-background-abstract-sparkle-particle-bokeh-generative-ai.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="35.0" layoutY="32.0" opacity="0.71" prefHeight="602.0" prefWidth="937.0" style="-fx-background-color: black;" styleClass="edge-img" stylesheets="@../style/Style.css">
+         <children>
+            <JFXButton layoutX="684.0" layoutY="512.0" onAction="#btnConformOnAction" prefHeight="62.0" prefWidth="234.0" style="-fx-background-color: #928AEF;" styleClass="edge-button" text="CONFORM DELEVERY">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXButton>
+            <ComboBox fx:id="cmbVehicleNo" layoutX="216.0" layoutY="314.0" onAction="#cmbVehicleNoOnAction" prefHeight="25.0" prefWidth="206.0" promptText="vehicle no" styleClass="edge-button" />
+            <ComboBox fx:id="cmbDriverId" layoutX="212.0" layoutY="373.0" onAction="#cmbDriverIdOnAction" prefHeight="25.0" prefWidth="206.0" promptText="Driverse id" styleClass="edge-button" />
+            <Label layoutX="53.0" layoutY="179.0" prefHeight="44.0" prefWidth="143.0" text="Delevery Id : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDeleveryId" layoutX="221.0" layoutY="180.0" prefHeight="46.0" prefWidth="171.0" textFill="#30da39">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="315.0" prefHeight="28.0" prefWidth="174.0" text="Vehicle Number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="371.0" prefHeight="28.0" prefWidth="161.0" text="Driver Id" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="483.0" layoutY="369.0" prefHeight="28.0" prefWidth="134.0" text="Driver Name : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDriverName" layoutX="647.0" layoutY="361.0" prefHeight="46.0" prefWidth="154.0" textFill="#30da39">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="247.0" prefHeight="28.0" prefWidth="155.0" text="Order Id : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="420.0" prefHeight="28.0" prefWidth="101.0" text="Contact" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtContact" layoutX="46.0" layoutY="455.0" prefHeight="44.0" prefWidth="275.0" styleClass="edge-button" stylesheets="@../style/Style.css" />
+            <Label fx:id="lblOrderId" layoutX="220.0" layoutY="236.0" prefHeight="46.0" prefWidth="171.0" textFill="#30da39">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="558.0" layoutY="512.0" onAction="#btnBackOnAction" prefHeight="62.0" prefWidth="110.0" style="-fx-background-color: #928AEF;" styleClass="edge-button" text="BACK">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="470.0" layoutY="304.0" prefHeight="44.0" prefWidth="143.0" text="Vehicle Type: " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblVehicleType" layoutX="622.0" layoutY="301.0" prefHeight="44.0" prefWidth="143.0" textFill="#30da39">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="316.0" layoutY="72.0" prefHeight="62.0" prefWidth="497.0" text="DELIVERY FORM">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="49.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7772511848341231" endY="1.0" startX="0.7677725118483412" startY="0.2085308056872038">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.020134228187919462">
+                     <color>
+                        <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.06097560975609757">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="294.0" layoutX="466.0" layoutY="134.0" startX="-192.0" stroke="WHITE" />
+   </children>
+</AnchorPane>

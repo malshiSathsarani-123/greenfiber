@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" opacity="0.81" prefHeight="733.0" prefWidth="1328.0" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.greenfiber.controller.DashboardFormController">
+   <style>-fx-background-color: white;</style>
+   <children>
+      <Label layoutY="-4.0" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #CED6E1;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+      <ImageView fitHeight="694.0" fitWidth="1035.0" layoutX="330.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/4264977_91352.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.02" contrast="0.4" hue="0.26" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <AnchorPane fx:id="LoadContext" blendMode="SRC_ATOP" layoutX="329.0" layoutY="39.0" prefHeight="689.0" prefWidth="1036.0">
+         <children>
+            <Polygon opacity="0.52" points="-57.66667175292969, 53.33333206176758, 916.6666870117188, 274.6666564941406, 663.3333129882812, 254.6666717529297" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.8009478672985781" endY="0.7488151658767772" startX="0.3981042654028436" startY="0.07582938388625593">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6052631735801697" green="0.06444931775331497" blue="0.06444931775331497" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Polygon>
+            <Polygon layoutX="-48.0" layoutY="331.0" opacity="0.37" points="-294.0, 280.0, 480.0, 236.66668701171875, 926.0, -318.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.4218009478672986" endY="0.1327014218009479" startX="0.10426540284360189" startY="0.7251184834123223">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7894737124443054" green="0.0767543837428093" blue="0.0767543837428093" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.0975609756097561">
+                           <color>
+                              <Color red="0.7799999713897705" green="0.07800000160932541" blue="0.07800000160932541" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.04020467773079872" green="0.05333820730447769" blue="0.43421053886413574" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Polygon>
+            <Label layoutX="35.0" layoutY="93.0" prefHeight="131.0" prefWidth="208.0" style="-fx-background-color: #10E3C0;" styleClass="edge-button" stylesheets="@../style/Style.css" textOverrun="WORD_ELLIPSIS" />
+            <Label layoutX="269.0" layoutY="30.0" text="DASH BORD">
+               <font>
+                  <Font name="Palatino Linotype Bold Italic" size="49.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.8009478672985781" endY="0.7488151658767772" startX="0.3981042654028436" startY="0.07582938388625593">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.44974416494369507" green="0.526102602481842" blue="0.9078947305679321" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Line endX="171.0" layoutX="417.0" layoutY="79.0" startX="-187.0" stroke="WHITE" />
+            <Label layoutX="535.0" layoutY="93.0" prefHeight="131.0" prefWidth="220.0" style="-fx-background-color: #10E3AB;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+            <Label fx:id="lblMattirials" layoutX="775.0" layoutY="94.0" prefHeight="131.0" prefWidth="218.0" style="-fx-background-color: #B60CD3;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+            <Label fx:id="lblOrders" layoutX="280.0" layoutY="93.0" prefHeight="131.0" prefWidth="220.0" style="-fx-background-color: #10E326;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="185.0" layoutX="709.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="206.0" />
+            <PieChart fx:id="pieChart" layoutX="717.0" layoutY="395.0" prefHeight="166.0" prefWidth="144.0" />
+            <ImageView blendMode="DARKEN" fitHeight="47.0" fitWidth="64.0" layoutX="312.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-facebook-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lbl" blendMode="DARKEN" fitHeight="47.0" fitWidth="47.0" layoutX="234.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/wh.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnMail1" blendMode="DARKEN" fitHeight="47.0" fitWidth="54.0" layoutX="158.0" layoutY="261.0" onDragDetected="#btnMailOnAction" pickOnBounds="true" preserveRatio="true" styleClass="edge-img">
+               <image>
+                  <Image url="@../img/icons8-gmail-logo-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lblGoogle" blendMode="DARKEN" fitHeight="47.0" fitWidth="54.0" layoutX="79.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-google-48.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnGoogle" layoutX="83.0" layoutY="266.0" minWidth="42.0" onAction="#btnGoogleOnAction" opacity="0.0" prefHeight="38.0" prefWidth="42.0" />
+            <JFXButton fx:id="btnMail" contentDisplay="TOP" layoutX="155.0" layoutY="266.0" minWidth="42.0" onAction="#btnMailOnAction" opacity="0.0" prefHeight="47.0" prefWidth="42.0" />
+            <JFXButton fx:id="btnFacebook" layoutX="308.0" layoutY="255.0" minWidth="47.0" onAction="#btnFacebookOnAction" opacity="0.0" prefHeight="47.0" prefWidth="47.0" text="Button" />
+            <JFXButton fx:id="btnWhatsapp" layoutX="231.0" layoutY="256.0" minWidth="42.0" onAction="#btnWhatsappOnAction" opacity="0.0" prefHeight="44.0" prefWidth="42.0" />
+            <Polygon layoutX="852.0" layoutY="357.0" opacity="0.31" points="-50.0, 40.0, 126.3333740234375, 281.0, -94.0, -233.33331298828125" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.29383886255924174">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.10169956088066101" green="0.06182992085814476" blue="0.46052631735801697" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8684210777282715" green="0.10051169246435165" blue="0.10051169246435165" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Polygon>
+            <Polygon layoutX="899.0" layoutY="342.0" opacity="0.58" points="42.3333740234375, 72.0, 84.3333740234375, 204.0, 84.3333740234375, -170.6666717529297" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.8009478672985781" endY="0.7488151658767772" startX="0.3981042654028436" startY="0.07582938388625593">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1905864179134369" green="0.09186159819364548" blue="0.6842105388641357" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.46052631735801697" green="0.017056530341506004" blue="0.017056530341506004" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Polygon>
+<!--            <ImageView fitHeight="98.0" fitWidth="98.0" layoutX="22.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="G:\Final project\finalProject\src\main\resources\img\icons8-customer-64 (2).png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+            <ImageView fitHeight="98.0" fitWidth="111.0" layoutX="289.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-purchase-order-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="73.0" fitWidth="81.0" layoutX="553.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-supplier-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="73.0" fitWidth="74.0" layoutX="807.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-supplies-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="85.0" layoutY="95.0" prefHeight="47.0" prefWidth="133.0" text="Customers">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSupplies" layoutX="885.0" layoutY="130.0" prefHeight="92.0" prefWidth="100.0" text="0" textFill="#d71111">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSupplir" layoutX="647.0" layoutY="131.0" prefHeight="98.0" prefWidth="100.0" text="0" textFill="#d71111">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOrder" layoutX="397.0" layoutY="128.0" prefHeight="98.0" prefWidth="100.0" text="0" textFill="#d71111">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="855.0" layoutY="99.0" prefHeight="47.0" prefWidth="133.0" text="Supplies">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="602.0" layoutY="100.0" prefHeight="47.0" prefWidth="133.0" text="Suppliers">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="347.0" layoutY="93.0" prefHeight="47.0" prefWidth="133.0" text="Orders">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCustomer" layoutX="120.0" layoutY="130.0" prefHeight="98.0" prefWidth="123.0" text="0" textFill="#d71111">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="780.0" layoutY="233.0" prefHeight="131.0" prefWidth="220.0" style="-fx-background-color: #13E4AB;" styleClass="edge-button" stylesheets="@../style/Style.css" />
+            <ImageView fitHeight="92.0" fitWidth="72.0" layoutX="793.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/balance.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="863.0" layoutY="243.0" prefHeight="35.0" prefWidth="124.0" text="Balance">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBalance" layoutX="880.0" layoutY="272.0" prefHeight="98.0" prefWidth="100.0" text="0" textFill="#d71111">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <BarChart fx:id="barChart" layoutX="39.0" layoutY="395.0" prefHeight="244.0" prefWidth="616.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="79.0" layoutY="38.0" prefHeight="688.0" prefWidth="251.0" style="-fx-background-color: rgb(41, 128, 185);" stylesheets="@../style/Style.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="688.0" layoutX="2.0" stroke="BLACK" strokeType="INSIDE" width="251.0">
+               <fill>
+                  <LinearGradient endX="0.8009478672985781" endY="0.7488151658767772" startX="0.3981042654028436" startY="0.07582938388625593">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.18421052396297455" green="0.11939571052789688" blue="0.11939571052789688" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.18421052396297455" green="0.11939571052789688" blue="0.11939571052789688" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.0871710553765297" green="0.0871710553765297" blue="0.6973684430122375" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <ImageView blendMode="SRC_ATOP" fitHeight="68.0" fitWidth="76.0" layoutX="68.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/user.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnPlaceOrder" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="396.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnPlaceOrderOnAction" prefHeight="38.0" text="PLACE ORDER" textAlignment="JUSTIFY" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnPlaceSuppliers" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="358.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnPlaceSuppliersOnAction" prefHeight="38.0" text="PLACE SUPPLIES" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            
+                  <JFXButton fx:id="btnSuppliersr" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="284.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnSuppliersrOnAction" prefHeight="38.0" text="SUPPLIER" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnReports" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="586.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnReportsOnAction" prefHeight="38.0" text="DETAILS" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnEmployees" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="208.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnEmployeesOnAction" prefHeight="38.0" text="EMPLOTYEE" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnVehicle" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="510.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnVehicleOnAction" prefHeight="38.0" text="VEHICLE" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnMattirials" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="246.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnMattirialsOnAction" prefHeight="38.0" text="MATTIRIAL" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnProduct" alignment="TOP_LEFT" blendMode="LIGHTEN" layoutX="29.0" layoutY="320.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnProductOnAction" prefHeight="38.0" text="PRODUCT" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnDistributeOnAction" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="472.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnDistributeOnAction" prefHeight="38.0" text="DILIVERY" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnCustomer" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="170.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnCustomerOnAction" prefHeight="38.0" text="CUSTOMER" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <Circle layoutX="-3.0" layoutY="37.0" opacity="0.39" radius="87.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.2985781990521327" startY="0.7345971563981043">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7105262875556946" green="0.02631578966975212" blue="0.02631578966975212" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.07931286841630936" green="0.10386208444833755" blue="0.8157894611358643" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="-27.0" layoutY="100.0" opacity="0.49" radius="61.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.29383886255924174">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6578947305679321" green="0.06700779497623444" blue="0.35260313749313354" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.3274041712284088" green="0.10952728986740112" blue="0.7631579041481018" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Label fx:id="lblUser" layoutX="34.0" layoutY="95.0" prefHeight="44.0" prefWidth="174.0" textFill="#dddada">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnManufactiaring" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="434.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnManufactiaringOnAction" prefHeight="38.0" text="MANUFACTUARING" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnAteendence" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="548.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnAteendenceOnAction" prefHeight="38.0" stylesheets="@../style/Style.css" text="ATTENDENCE" textAlignment="JUSTIFY">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="688.0" layoutX="-82.0" stroke="BLACK" strokeType="INSIDE" width="83.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.19103313982486725" green="0.43300843238830566" blue="0.6447368264198303" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <JFXButton fx:id="btnReports1" alignment="CENTER" blendMode="LIGHTEN" layoutX="29.0" layoutY="624.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#btnReports01OnAction" prefHeight="38.0" text="PAYMENT" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="47.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="1366.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.006335282698273659" green="0.0492040291428566" blue="0.10526315867900848" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="lblTime" layoutX="852.0" layoutY="5.0" prefHeight="30.0" prefWidth="101.0" text="Time" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="976.0" layoutY="5.0" prefHeight="30.0" prefWidth="133.0" text="date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button blendMode="SRC_ATOP" layoutX="1121.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="30.0" prefWidth="80.0" styleClass="edge-button" text="LOG OUT">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDashBoard" blendMode="SRC_ATOP" layoutX="1253.0" layoutY="4.0" mnemonicParsing="false" onAction="#btnDashBoard" prefHeight="30.0" prefWidth="80.0" styleClass="edge-button" text="HOME">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
