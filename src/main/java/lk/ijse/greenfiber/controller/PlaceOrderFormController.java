@@ -254,7 +254,7 @@ public class PlaceOrderFormController implements Initializable {
     private void getBill()throws JRException, SQLException{
         String id = lblOrderId.getText();
         JasperDesign load = null;
-        load = JRXmlLoader.load(new File("G:\\1st semester\\Final project 01\\finalProject\\src\\main\\resources\\report\\orderDetails.jrxml"));
+        load = JRXmlLoader.load(new File("G:\\2nd semester\\LayeredArchitecture\\LayerdArchitectureCourswork\\src\\main\\resources\\report\\orderDetails.jrxml"));
         JRDesignQuery newQuery = new JRDesignQuery();
         String sql = "SELECT p.Description as Name, p.Unit_Price as Unit_Price, od.Product_Qty , od.Total as Total FROM product p INNER JOIN order_detail od ON p.Product_Code = od.Product_Code WHERE od.Order_Id = '"+id+"'";
         newQuery.setText(sql);

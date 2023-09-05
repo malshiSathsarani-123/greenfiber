@@ -314,11 +314,11 @@ public class CustomerFormController {
     }
 
     public void btnDetailsOnAction(ActionEvent actionEvent) throws IOException {
-//        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/customer_details_form.fxml"));
-//        Parent load= loader.load();
-//        CustomerDetailsFormController controller = loader.getController();
-//        controller.setAction1();
-//        root.getChildren().clear();
-//        root.getChildren().add(load);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/customer_details_form.fxml"));
+        Parent load= loader.load();
+        CustomerDetailsFormController controller = loader.getController();
+        controller.setAction1();
+        root.getChildren().clear();
+        root.getChildren().add(load);
     }
 }

@@ -22,11 +22,6 @@ public class OrderDAOImpl implements OrderDAO {
         return nextId(null);
     }
 
-    @Override
-    public boolean save(Orders orders) throws SQLException {
-        String sql = "INSERT INTO orders (Order_Id,Amount,Date,Time,Customer_Id,TheOutstandingAmount) VALUES (?,?,?,?,?,?)";
-        return CrudUtil.execute(sql,orders.getOrderId(),orders.getAmount(),orders.getDate(),orders.getTime(),orders.getCustomerId(),orders.getAmount());
-    }
 
     private String nextId(String currentId) {
         if (currentId != null){
@@ -38,6 +33,12 @@ public class OrderDAOImpl implements OrderDAO {
         }
         return "O001";
     }
+    @Override
+    public boolean save(Orders orders) throws SQLException {
+        String sql = "INSERT INTO orders (Order_Id,Amount,Date,Time,Customer_Id,TheOutstandingAmount) VALUES (?,?,?,?,?,?)";
+        return CrudUtil.execute(sql,orders.getOrderId(),orders.getAmount(),orders.getDate(),orders.getTime(),orders.getCustomerId(),orders.getAmount());
+    }
+
 
     @Override
     public String getOrderId() throws SQLException {

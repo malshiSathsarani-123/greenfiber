@@ -12,5 +12,6 @@ public interface EmployeeDAO extends CrudDAO<Employee,String> {
         String getName(String id) throws SQLException ;
 
         Employee searchNic(String nic) throws SQLException ;
+
         public List<String> genarateIds() throws SQLException ;
 }

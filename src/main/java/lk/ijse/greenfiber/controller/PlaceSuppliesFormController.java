@@ -272,7 +272,7 @@ public class PlaceSuppliesFormController implements Initializable {
     private void getBill()throws JRException, SQLException{
         String id = lblSuppliesId.getText();
         JasperDesign load = null;
-        load = JRXmlLoader.load(new File("G:\\1st semester\\Final project 01\\finalProject\\src\\main\\resources\\report\\suppliess.jrxml"));
+        load = JRXmlLoader.load(new File("G:\\2nd semester\\LayeredArchitecture\\LayerdArchitectureCourswork\\src\\main\\resources\\report\\suppliess.jrxml"));
         JRDesignQuery newQuery = new JRDesignQuery();
         String sql = "SELECT m.Description as name, m.Unit_Price as Unit_Price, sd.Mattirial_Qty , sd.Total as Total FROM mattirial m INNER JOIN supplies_detail sd ON m.Mattirial_Code = sd.Mattirial_Code WHERE sd.Supplies_id =  '"+id+"'";
         newQuery.setText(sql);
